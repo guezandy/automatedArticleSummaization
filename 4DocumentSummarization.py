@@ -31,9 +31,7 @@ def score_sentences(sentences, important_words):
 				pass
 			word_idx.sort()
 
-			#if sentence doesn't contain any important words
-			if len(word_idx) == 0: continue
-
+			if len(word_idx) == 0: continue #if sentence doesn't contain any important words
 #Check the important words location and make sure they're less than
 #the cluster_threshold set above
 			clusters = []
@@ -61,7 +59,6 @@ def score_sentences(sentences, important_words):
 						max_cluster_score = score 
 					scores.append((sentence_index, score))
 			return scores 
-
 
 def summarize(txt):
 	#seperate sentences

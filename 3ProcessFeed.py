@@ -12,22 +12,7 @@ data = json.loads(open(data_file).read())
 #custom list of stop words
 
 stop_words = nltk.corpus.stopwords.words('english') + [
-	'.',
-	',',
-	'--',
-	'\'s',
-	'?',
-	')',
-	'(',
-	':',
-	'\'',
-	'\'re',
-	'"',
-	'-',
-	'}',
-	'{',
-	'-',
-	'=',
+	'.', ',','--','\'s','?',')','(',':','\'','\'re','"','-','}','{','-','=',
 ]
 
 for post in data:
